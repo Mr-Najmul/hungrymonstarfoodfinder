@@ -9,7 +9,7 @@
 a {
     text-decoration: none;
     transition: 0.2s;
-    color: #e75906;
+    color: #0682e7;
 }
 
 body {
@@ -40,7 +40,7 @@ body {
     border: 0;
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 10px;
     font-size: 16px;
     color: #000;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .input-form .input-field input::-webkit-input-placeholder {
-    color: #222;
+    color: rgb(107, 105, 105);
     font-size: 16px;
 }
 
@@ -115,13 +115,13 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 0;
-    background: #e75906;
+    background: #1157d2;
     transition: all 0.2s ease-out, color 0.2s ease-out;
     font-weight: 300;
 }
 
 .input-form .input-field.second-wrap .btn-search:hover {
-    background: #e75906;
+    background: #03a81e;
 }
 
 .input-form .input-field.second-wrap .btn-search:focus {
@@ -145,8 +145,5 @@ footer {
 
 #warning {
     display: none;
-}
-
-.searchIcon {
-    padding-left: 10px;
+    color: #e75906;
 }

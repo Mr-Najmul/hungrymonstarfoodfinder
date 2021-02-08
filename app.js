@@ -1,4 +1,3 @@
-
 const mainContainer = document.getElementById('foods');
 const searchButton = document.getElementById('searchButton');
 const warning = document.getElementById('warning');
@@ -10,8 +9,8 @@ searchButton.addEventListener('click', function () {
     mainContainer.innerHTML = '';
     if (findKey === '') {
         warning.style.display = 'block';
-    }else {
-        getFood(findKey);
+    } else {
+        takeFood(findKey);
         warning.style.display = 'none';
     }
 });
@@ -46,7 +45,7 @@ const foodInfo = food => {
 
 // Main API
 
-function getFood(foodId) {
+function takeFood(foodId) {
     const foodApi = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodId}`;
 
     fetch(foodApi)
@@ -66,7 +65,7 @@ function getFood(foodId) {
                         <img class="img-fluid rounded" src="${food.strMealThumb}" alt="">
                         <h4 class="h5 py-4 px-2 mb-0">${food.strMeal}</h4>
                         </div>
-                    `;
+                     `;
                 foodDiv.innerHTML = foodInfo;
                 foodsDiv.appendChild(foodDiv);
             });
